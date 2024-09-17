@@ -11,6 +11,7 @@
 		377B3EB02B1FB87000C81F6A /* Animation - 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 377B3EAD2B1FB87000C81F6A /* Animation - 1.json */; };
 		377B3EB32B1FD94100C81F6A /* UIView Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3EB22B1FD94100C81F6A /* UIView Extension.swift */; };
 		378855472B28A0CB006573CE /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378855462B28A0CB006573CE /* LaunchViewController.swift */; };
+		41928C1E2C9A427900C6E015 /* UICollectionView Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41928C1D2C9A427900C6E015 /* UICollectionView Extension.swift */; };
 		41C42A942C99A5AA00599AA9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 41C42A932C99A5AA00599AA9 /* Kingfisher */; };
 		41C42A982C99F53D00599AA9 /* SnackBar+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C42A972C99F53D00599AA9 /* SnackBar+Enum.swift */; };
 		41C42A9A2C99F55100599AA9 /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C42A992C99F55100599AA9 /* SnackBar.swift */; };
@@ -77,6 +78,7 @@
 		377B3EAD2B1FB87000C81F6A /* Animation - 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Animation - 1.json"; sourceTree = "<group>"; };
 		377B3EB22B1FD94100C81F6A /* UIView Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView Extension.swift"; sourceTree = "<group>"; };
 		378855462B28A0CB006573CE /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		41928C1D2C9A427900C6E015 /* UICollectionView Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView Extension.swift"; sourceTree = "<group>"; };
 		41C42A972C99F53D00599AA9 /* SnackBar+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SnackBar+Enum.swift"; sourceTree = "<group>"; };
 		41C42A992C99F55100599AA9 /* SnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBar.swift; sourceTree = "<group>"; };
 		41C42A9B2C99F56D00599AA9 /* SnackBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarView.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				377B3EB22B1FD94100C81F6A /* UIView Extension.swift */,
 				41C42A9D2C99F99100599AA9 /* UIApplication Extension.swift */,
 				41C42AA82C9A0B7700599AA9 /* UIImageView Extension.swift */,
+				41928C1D2C9A427900C6E015 /* UICollectionView Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 			files = (
 				F48F394C2B1D42EE009DAFA8 /* HomeModel.swift in Sources */,
 				F4DE52E92B250588003CA4A1 /* BookDetailsModel.swift in Sources */,
+				41928C1E2C9A427900C6E015 /* UICollectionView Extension.swift in Sources */,
 				F439A10F2B2D04BB00A2DB02 /* BookDetailsModelAPI.swift in Sources */,
 				41C42A9E2C99F99100599AA9 /* UIApplication Extension.swift in Sources */,
 				790E5E662B21E60400B8AA0D /* CustomSegmentedControlDelegate.swift in Sources */,

@@ -39,6 +39,7 @@ final class HomeView: UIView {
     func setViews() {
         self.backgroundColor = .background
         self.addSubview(collectionView)
+        loadingView.show()
         fetchTrendingBooks()
         fetchCategoryCollection()
         buttonPressed(selectedSegment: selectedSegment)
@@ -298,13 +299,11 @@ extension HomeView: UICollectionViewDataSource {
     // MARK: - Networking
     
     private func fetchTrendingBooks() {
-        loadingView.show()
         Task { [weak self] in
             guard let self else { return }
             do {
                 if let data = try await bookAPI?.getTrendingBooks(for: self.selectedSegment) {
                     self.trendingBooks = data
-                    self.loadingView.dismiss()
                     self.collectionView.reloadData()
                 }
             } catch {
@@ -317,14 +316,14 @@ extension HomeView: UICollectionViewDataSource {
     }
 
     private func fetchCategoryCollection() {
-        loadingView.show()
         Task { [weak self] in
             guard let self else { return }
             do {
                 if let data = try await bookAPI?.getCategoryCollection(for: .fiction), let works = data.first {
-                    self.loadingView.dismiss()
                     self.works = works.works
-                    self.collectionView.reloadData()
+                    self.collectionView.reloadData {
+                        self.loadingView.dismiss()
+                    }
                 }
             } catch {
                 self.loadingView.dismiss()
